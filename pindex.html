@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyankshu Sheet - Resume</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d3d3d3; /* Light Grey Background */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #162c38;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid #005582;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #cccccc;
+        }
+        section {
+            padding: 50px 0;
+            border-bottom: 1px #ddd solid;
+            background: #ffffff;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #283e4a;
+            padding-bottom: 10px;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .contact-info a {
+            color: #283e4a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        ul.skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.skills-list li {
+            background: #283e4a;
+            color: #fff;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1>Priyankshu Sheet</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello, My name is Priyankshu Sheet, and I'm a passionate Electronics and Communication Engineering student with a keen interest in Science, Technology, Content Creation, and Investment. I believe in staying updated about the latest trends and innovations in these fields, and I'm constantly searching for new ways to learn and grow.
+
+            As a student pursuing a Bachelor of Technology degree in Electronics and Communication Engineering, I have gained a solid foundation in engineering and design principles.
+            
+            In addition to my academic pursuits, I am an avid content creator with a talent for writing and creating engaging videos. I'm always looking for new ways to connect with people who share my interests.
+            
+            Finally, I'm interested in finance and investment, and I believe that wise investments can help us achieve our goals and dreams. I'm always learning about the stock market and other investment opportunities, and I'm excited to meet professionals in this field.
+            
+            Thank you for visiting my page; I look forward to hearing from you!</p>
+    </section>
+    
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <p>Currently no professional experience listed.</p>
+    </section>
+    
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <p><strong>Madhav Institute of Technology and Science, Gwalior</strong><br>Bachelor of Technology (BTech) in Electronics and Communications Engineering<br>September 2023 - September 2027</p>
+        <p><strong>St. Joseph's Convent Sr. Sec. School, Ranjhi</strong><br>Matriculation and Intermediate in Mathematics and Science<br>2008 - 2022</p>
+    </section>
+    
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Software Development</li>
+            <li>C++</li>
+            <li>Data Structures</li>
+            <li>Problem Solving</li>
+            <li>Leadership</li>
+            <li>Marketing</li>
+            <li>Financial Analysis</li>
+            <li>Web Content Writing</li>
+            <li>Public Speaking</li>
+            <li>Poetry</li>
+        </ul>
+    </section>
+    
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <p>Built a Resume Website</p>
+    </section>
+    
+    <section id="certifications" class="container">
+        <h2>Certifications</h2>
+        <p>Silver Medal in Mathematics Olympiad</p>
+    </section>
+    
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p class="contact-info">Email: <a href="mailto:priyankshu.sheet123@gmail.com">priyankshu.sheet123@gmail.com</a><br>LinkedIn: <a href="https://www.linkedin.com/in/priyankshusheet">Priyankshu Sheet</a></p>
+    </section>
+    
+    
+    <script>
+        // Function to check if an element is in viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+        
+        // Add class 'visible' to sections when they come into view
+        document.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+
+        // Initial check to reveal sections already in view
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
