@@ -31,40 +31,23 @@ main {
     margin: 0 auto;
 }
 
-section {
-    margin-bottom: 40px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
+/* General styling for the blue tint background */
 .blue-tint {
-    background-color: #e0f7fa; /* Light blue tint */
+    background-color: #e0f7fa;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-.blue-tint h2 {
-    color: #0073b1; /* Darker blue for headings */
+/* Darker background for headings */
+h2 {
+    background-color: #00796b; /* Darker teal shade */
+    color: #ffffff; /* White text */
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.blue-tint ul li button {
-    background-color: #004d40; /* Darker accent for GitHub buttons */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px 0;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.blue-tint ul li button:hover {
-    background-color: #00251a; /* Even darker on hover */
-}
-
+/* Profile card styling */
 #about-me .profile-card {
     display: flex;
     align-items: center;
@@ -118,6 +101,29 @@ section {
     padding: 10px 20px;
     border-radius: 4px;
     color: #333;
+}
+
+/* Darker background for GitHub buttons */
+.project-list button {
+    background-color: #004d40; /* Much darker teal shade */
+    color: #ffffff; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project-list button:hover {
+    background-color: #00251a; /* Darkest teal on hover */
+}
+
+#education, #skills, #certifications, #contact {
+    margin-bottom: 20px;
+}
+
+#education p, #certifications p, #contact p {
+    margin: 0;
 }
 
 ul {
