@@ -1,12 +1,7 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f3f2ef;
     color: #333;
 }
@@ -32,19 +27,112 @@ header h2 {
 
 main {
     padding: 20px;
-    max-width: 100%; /* Ensure it uses the full width */
-    box-sizing: border-box; /* Include padding in width calculation */
-    margin: 0 auto; /* Center the main content */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 section {
-    margin: 0; /* Remove default margin */
-    padding: 20px;
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Include padding in width calculation */
+    margin-bottom: 40px;
     background: #fff;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about-me .profile-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border: 2px solid #ccc;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #0073b1;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+.profile-info a {
+    color: #0073b1;
+    text-decoration: none;
+}
+
+.profile-buttons {
+    margin: 20px 0;
+}
+
+.profile-buttons button {
+    background-color: #0073b1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.profile-buttons button:hover {
+    background-color: #005580;
+}
+
+.profile-summary {
+    background: #e6f4ff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #333;
+}
+
+.blue-tint {
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+section h2 {
+    background-color: #004d40; /* Darker accent for GitHub buttons */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-list button {
+    background-color: #004d40; /* Darker accent for GitHub buttons */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-list button:hover {
+    background-color: #00332c; /* Even darker shade on hover */
+}
+
+#education, #skills, #certifications, #contact {
+    margin-bottom: 20px;
+}
+
+#education p, #certifications p, #contact p {
+    margin: 0;
 }
 
 ul {
