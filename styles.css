@@ -1,108 +1,158 @@
-/* Reset default margins and paddings */
-body, h1, h2, h3, p, ul, li {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-/* Set box-sizing to border-box for better control over width and padding */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #d3d3d3; /* Light Grey Background */
+    background-color: #f3f2ef;
     color: #333;
-    line-height: 1.6;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
 }
 
 header {
-    background: #162c38; /* Dark Blue */
-    color: #ffffff;
-    padding: 20px 0;
+    background-color: #283e4a;
+    color: #fff;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 3px solid #005582; /* Darker Blue Accent */
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5em;
+    margin: 0;
 }
 
 header h2 {
-    color: #005582; /* Darker Blue Accent */
+    font-size: 1.5em;
+    margin: 5px 0;
+    color: #b0b0b0;
 }
 
 main {
-    width: 100%;
-    max-width: 1200px; /* Optional: Set a maximum width */
-    margin: 0 auto; /* Center the content */
     padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Optional: Adjust or remove this to suit your design */
+    margin: 0 auto; /* Center the content */
 }
 
 section {
+    margin-bottom: 40px;
+    background: #fff;
     padding: 20px;
-    margin-bottom: 20px;
-    background: #ffffff;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-section.blue-tint {
-    background: #e6f2f7; /* Light Blue Tint */
+#about-me .profile-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-section h2 {
-    color: #333;
-    border-bottom: 2px solid #005582; /* Darker Blue Accent */
-    padding-bottom: 10px;
-    font-size: 2em;
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border: 2px solid #ccc;
 }
 
-ul {
-    list-style-type: none;
+.profile-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #0073b1;
 }
 
-ul li {
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #e6f2f7; /* Light Blue Tint */
-    border-left: 5px solid #005582; /* Darker Blue Accent */
+.profile-info p {
+    margin: 5px 0;
 }
 
-a {
-    color: #005582; /* Darker Blue Accent */
+.profile-info a {
+    color: #0073b1;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+.profile-buttons {
+    margin: 20px 0;
 }
 
-button {
-    padding: 5px 10px;
-    background: #005582; /* Darker Blue Accent */
-    color: #ffffff;
+.profile-buttons button {
+    background-color: #0073b1;
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
     cursor: pointer;
-    transition: background 0.3s;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background: #003f5c; /* Even Darker Blue */
+.profile-buttons button:hover {
+    background-color: #005580;
+}
+
+.profile-summary {
+    background: #e6f4ff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #333;
+}
+
+.blue-tint {
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+section h2 {
+    background-color: #004d40; /* Darker accent for section headers */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-list button {
+    background-color: #004d40; /* Darker accent for GitHub buttons */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-list button:hover {
+    background-color: #00332c; /* Even darker shade on hover */
+}
+
+#education, #skills, #certifications, #contact {
+    margin-bottom: 20px;
+}
+
+#education p, #certifications p, #contact p {
+    margin: 0;
+}
+
+ul {
+    margin-bottom: 10px;
+    background-color: #e0f7fa; /* Light tint background */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    background-color: #e0f7fa; /* Light tint background */
+    padding: 10px;
+    border-radius: 4px;
 }
 
 footer {
-    background: #333;
-    color: #ffffff;
+    background: #283e4a;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
