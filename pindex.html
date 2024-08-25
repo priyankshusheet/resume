@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyankshu Sheet - Resume</title>
     <style>
-        /* Reset margin and padding */
-        html, body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f0f8ff; /* Alice Blue Background */
             color: #333;
             line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
         }
         header {
             background: #001f3f; /* Dark Blue Background */
@@ -46,14 +48,13 @@
             color: #cccccc;
         }
         section {
-            padding: 50px 20px;
+            padding: 50px 0;
             border-bottom: 1px #ddd solid;
             background: #ffffff;
-            margin: 0 auto;
+            margin-bottom: 20px;
             opacity: 0;
             transform: translateY(50px);
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-            max-width: 1200px; /* Adjust max-width as needed */
         }
         section.visible {
             opacity: 1;
@@ -82,11 +83,10 @@
             background: #001f3f; /* Dark Blue Background */
             color: #ffffff;
             text-align: center;
-            padding: 10px 20px;
+            padding: 10px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
-            box-sizing: border-box;
         }
         ul.skills-list {
             list-style-type: none;
@@ -138,7 +138,7 @@
         </nav>
     </header>
     
-    <section id="about">
+    <section id="about" class="container">
         <h2>About Me</h2>
         <p>Hello, My name is Priyankshu Sheet, and I'm a passionate Electronics and Communication Engineering student with a keen interest in Science, Technology, Content Creation, and Investment. I believe in staying updated about the latest trends and innovations in these fields, and I'm constantly searching for new ways to learn and grow.
 
@@ -151,18 +151,18 @@
             Thank you for visiting my page; I look forward to hearing from you!</p>
     </section>
     
-    <section id="experience">
+    <section id="experience" class="container">
         <h2>Experience</h2>
         <p>Currently no professional experience listed.</p>
     </section>
     
-    <section id="education">
+    <section id="education" class="container">
         <h2>Education</h2>
         <p><strong>Madhav Institute of Technology and Science, Gwalior</strong><br>Bachelor of Technology (BTech) in Electronics and Communications Engineering<br>September 2023 - September 2027</p>
         <p><strong>St. Joseph's Convent Sr. Sec. School, Ranjhi</strong><br>Matriculation and Intermediate in Mathematics and Science<br>2008 - 2022</p>
     </section>
     
-    <section id="skills">
+    <section id="skills" class="container">
         <h2>Skills</h2>
         <ul class="skills-list">
             <li>Software Development</li>
@@ -177,7 +177,7 @@
         </ul>
     </section>
     
-    <section id="projects">
+    <section id="projects" class="container">
         <h2>Projects</h2>
         <ul class="project-list">
             <li>
@@ -202,7 +202,7 @@
             </li>
             <li>
                 <strong>Moonshot</strong>: An interactive app for learning about Astronauts and Space Missions.
-                <button onclick="window.open('https://github.com/priyankshusheet/MoonShot', '_blank')">GitHub</button>
+                <button onclick="window.open('https://github.com/priyankshusheet/Moonshot.git', '_blank')">GitHub</button>
             </li>
             <li>
                 <strong>Cupcake Junction</strong>: A cupcake delivery app with enhanced UI and features for a better user experience.
