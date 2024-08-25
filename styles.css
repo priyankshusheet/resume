@@ -46,6 +46,25 @@ section {
     border-radius: 8px;
 }
 
+.blue-tint h2 {
+    color: #0073b1; /* Darker blue for headings */
+}
+
+.blue-tint ul li button {
+    background-color: #004d40; /* Darker accent for GitHub buttons */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.blue-tint ul li button:hover {
+    background-color: #00251a; /* Even darker on hover */
+}
+
 #about-me .profile-card {
     display: flex;
     align-items: center;
