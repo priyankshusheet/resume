@@ -1,0 +1,136 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3; /* Light Grey Background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Max width to prevent it from stretching too much */
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+header {
+    background: #162c38; /* Dark Blue Background */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #005582; /* Accent Color */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #cccccc; /* Light Gray */
+}
+
+section {
+    padding: 50px 0;
+    border-bottom: 1px #ddd solid;
+    background: #ffffff;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section h2 {
+    color: #162c38; /* Dark Blue Color */
+    border-bottom: 2px solid #005582; /* Accent Color */
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #005582; /* Accent Color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #162c38; /* Dark Blue Background */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ul.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.skills-list li {
+    background: #004f6c; /* Darker Blue */
+    color: #ffffff; /* White Text */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-list li {
+    background: #e0f4ff; /* Very Light Tint of Blue */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.project-list li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: #005582; /* Accent Color */
+    color: #ffffff; /* White Text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.project-list li button:hover {
+    background: #003d5c; /* Darker Shade of Accent Color */
+}
