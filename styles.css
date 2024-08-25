@@ -94,6 +94,14 @@ section {
     color: #333;
 }
 
+.blue-tint {
+    background-color: #e0f7fa;
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+}
+
+
 #education, #skills, #certifications, #contact {
     margin-bottom: 20px;
 }
