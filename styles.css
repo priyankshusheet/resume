@@ -39,6 +39,13 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.blue-tint {
+    background-color: #e0f7fa; /* Light blue tint */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
 #about-me .profile-card {
     display: flex;
     align-items: center;
@@ -92,22 +99,6 @@ section {
     padding: 10px 20px;
     border-radius: 4px;
     color: #333;
-}
-
-.blue-tint {
-    background-color: #e0f7fa;
-    padding: 20px; 
-    margin-bottom: 20px; 
-    border-radius: 8px; 
-}
-
-
-#education, #skills, #certifications, #contact {
-    margin-bottom: 20px;
-}
-
-#education p, #certifications p, #contact p {
-    margin: 0;
 }
 
 ul {
