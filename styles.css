@@ -1,157 +1,108 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    background-color: #f3f2ef;
+}
+
+/* Set box-sizing to border-box for better control over width and padding */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #d3d3d3; /* Light Grey Background */
     color: #333;
+    line-height: 1.6;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 header {
-    background-color: #283e4a;
-    color: #fff;
-    text-align: center;
+    background: #162c38; /* Dark Blue */
+    color: #ffffff;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #005582; /* Darker Blue Accent */
 }
 
 header h1 {
-    font-size: 2.5em;
     margin: 0;
+    font-size: 2.5em;
 }
 
 header h2 {
-    font-size: 1.5em;
-    margin: 5px 0;
-    color: #b0b0b0;
+    color: #005582; /* Darker Blue Accent */
 }
 
 main {
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the content */
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 section {
-    margin-bottom: 40px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#about-me .profile-card {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-    border: 2px solid #ccc;
-}
-
-.profile-info h3 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #0073b1;
-}
-
-.profile-info p {
-    margin: 5px 0;
-}
-
-.profile-info a {
-    color: #0073b1;
-    text-decoration: none;
-}
-
-.profile-buttons {
-    margin: 20px 0;
-}
-
-.profile-buttons button {
-    background-color: #0073b1;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.profile-buttons button:hover {
-    background-color: #005580;
-}
-
-.profile-summary {
-    background: #e6f4ff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    color: #333;
-}
-
-.blue-tint {
-    background-color: #e0f7fa;
     padding: 20px;
     margin-bottom: 20px;
+    background: #ffffff;
     border-radius: 8px;
+}
+
+section.blue-tint {
+    background: #e6f2f7; /* Light Blue Tint */
 }
 
 section h2 {
-    background-color: #004d40; /* Darker accent for GitHub buttons */
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.project-list button {
-    background-color: #004d40; /* Darker accent for GitHub buttons */
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.project-list button:hover {
-    background-color: #00332c; /* Even darker shade on hover */
-}
-
-#education, #skills, #certifications, #contact {
-    margin-bottom: 20px;
-}
-
-#education p, #certifications p, #contact p {
-    margin: 0;
+    color: #333;
+    border-bottom: 2px solid #005582; /* Darker Blue Accent */
+    padding-bottom: 10px;
+    font-size: 2em;
 }
 
 ul {
-    margin-bottom: 10px;
-    background-color: #e0f7fa; /* Light tint background */
-    padding: 10px;
-    border-radius: 4px;
+    list-style-type: none;
 }
 
 ul li {
-    margin-bottom: 10px;
-    background-color: #e0f7fa; /* Light tint background */
     padding: 10px;
-    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #e6f2f7; /* Light Blue Tint */
+    border-left: 5px solid #005582; /* Darker Blue Accent */
+}
+
+a {
+    color: #005582; /* Darker Blue Accent */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 5px 10px;
+    background: #005582; /* Darker Blue Accent */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #003f5c; /* Even Darker Blue */
 }
 
 footer {
-    background: #283e4a;
-    color: #fff;
+    background: #333;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
