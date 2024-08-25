@@ -4,125 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyankshu Sheet - Resume</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff; /* Alice Blue Background */
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        header {
-            background: #001f3f; /* Dark Blue Background */
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 3px solid #007bff; /* Bootstrap Blue Border */
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            margin-top: 15px;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 15px;
-            text-transform: uppercase;
-            font-size: 0.9em;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #cccccc;
-        }
-        section {
-            padding: 50px 0;
-            border-bottom: 1px #ddd solid;
-            background: #ffffff;
-            margin-bottom: 20px;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        section h2 {
-            color: #ffffff; /* White Text */
-            background-color: #001f3f; /* Dark Blue Background */
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 2em;
-        }
-        p {
-            font-size: 1em;
-            margin-bottom: 10px;
-        }
-        .contact-info a {
-            color: #001f3f; /* Dark Blue */
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background: #001f3f; /* Dark Blue Background */
-            color: #ffffff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        ul.skills-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul.skills-list li {
-            background: #ffffff;
-            color: #001f3f; /* Dark Blue */
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 5px;
-        }
-        .project-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .project-list li {
-            background: #ffffff;
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 5px;
-        }
-        .project-list li button {
-            margin-left: 10px;
-            padding: 5px 10px;
-            background: #007bff; /* Bootstrap Blue */
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .project-list li button:hover {
-            background: #0056b3; /* Darker Bootstrap Blue */
-        }
-    </style>
+    <link rel="stylesheet" href="pindex-resume.css">
 </head>
 <body>
     <header class="container">
@@ -200,49 +82,58 @@
                 <strong>RupeeDiary</strong>: An expense tracker and money management app with features like graphs and pie charts to visualize spending.
                 <button onclick="window.open('https://github.com/priyankshusheet/RupeeDiary', '_blank')">GitHub</button>
             </li>
-            <li>
+             <li>
                 <strong>Moonshot</strong>: An interactive app for learning about Astronauts and Space Missions.
                 <button onclick="window.open('https://github.com/priyankshusheet/Moonshot.git', '_blank')">GitHub</button>
             </li>
-            <li>
-                <strong>Cupcake Junction</strong>: A cupcake delivery app with enhanced UI and features for a better user experience.
-                <button onclick="window.open('https://github.com/priyankshusheet/CupcakeJunction', '_blank')">GitHub</button>
+               <li>
+                <strong>Cupcake Junction</strong>: An food delivery and quick commerce app for tailoring and ordering delicious Cupcakes.
+                <button onclick="window.open('https://github.com/priyankshusheet/Cupcake-Junction.git', '_blank')">GitHub</button>
             </li>
         </ul>
     </section>
     
     <section id="certifications" class="container">
         <h2>Certifications</h2>
-        <p>Currently no certifications listed.</p>
+        <p>Silver Medal in Mathematics Olympiad</p>
     </section>
     
     <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <p class="contact-info">
-            Email: <a href="mailto:priyankshu.sheet123@gmail.com">priyankshu.sheet123@gmail.com</a><br>
-            LinkedIn: <a href="https://www.linkedin.com/in/priyankshusheet" target="_blank">Priyankshu Sheet</a><br>
-            GitHub: <a href="https://github.com/priyankshusheet" target="_blank">Priyankshu Sheet</a>
-        </p>
+        <h2>Contact</h2>
+        <p class="contact-info">Email: <a href="mailto:priyankshu.sheet123@gmail.com">priyankshu.sheet123@gmail.com</a><br>LinkedIn: <a href="https://www.linkedin.com/in/priyankshusheet">Priyankshu Sheet</a></p>
     </section>
     
-    <footer>
-        <p>&copy; 2024 Priyankshu Sheet</p>
-    </footer>
     
     <script>
-        // Intersection Observer for Section Visibility
-        const sections = document.querySelectorAll('section');
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+        // Function to check if an element is in viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+        
+        // Add class 'visible' to sections when they come into view
+        document.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.classList.add('visible');
                 }
             });
         });
 
-        sections.forEach(section => {
-            observer.observe(section);
+        // Initial check to reveal sections already in view
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.classList.add('visible');
+                }
+            });
         });
     </script>
 </body>
