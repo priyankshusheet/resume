@@ -102,14 +102,7 @@ section {
 }
 
 section h2 {
-    background-color: #004d40; /* Darker accent for GitHub buttons */
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    color: #004d40; /* Darker shade for the headings */
 }
 
 .project-list button {
@@ -136,10 +129,8 @@ section h2 {
 }
 
 ul {
-    margin-bottom: 10px;
-    background-color: #e0f7fa; /* Light tint background */
-    padding: 10px;
-    border-radius: 4px;
+    padding: 0;
+    list-style-type: none;
 }
 
 ul li {
