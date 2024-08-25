@@ -141,6 +141,7 @@ ul {
     background-color: #e0f7fa; /* Light tint background */
     padding: 10px;
     border-radius: 4px;
+    list-style-type: none;
 }
 
 ul li {
@@ -148,6 +149,7 @@ ul li {
     background-color: #e0f7fa; /* Light tint background */
     padding: 10px;
     border-radius: 4px;
+    list-style-type: none;
 }
 
 footer {
